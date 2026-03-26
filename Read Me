@@ -1,10 +1,14 @@
 # 🎮 Life RPG
 
-> Turn your real life into a game — track habits, complete quests, and level up yourself.
+Turn your real life into a game — track habits, complete quests, and level up yourself.
 
 # 📌 Overview
 
-**Life RPG** is a gamified productivity application that transforms daily tasks and habits into a role-playing game experience.
+Life RPG is a gamified productivity web application that transforms everyday tasks and habits into an engaging role-playing experience.
+Instead of traditional to-do lists, users complete real-life "quests", earn rewards,
+and track their progress as they level up in their personal growth journey.
+The goal of the project is to make self-improvement more motivating, interactive,
+and enjoyable by combining game mechanics with productivity tools in a modern full-stack web application.
 
 Users can:
 
