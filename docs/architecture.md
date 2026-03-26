@@ -1,6 +1,6 @@
-# 🧠 System Architecture & Agent Design – Life RPG
+# System Architecture & Agent Design – Life RPG
 
-# 📊 High-Level Architecture
+# High-Level Architecture
 
 User (Frontend UI)
         │
@@ -19,9 +19,9 @@ Agent  Agent    Agent
         ▼
 Database Layer (PostgreSQL + Drizzle ORM)
 
-# 🤖 Agent Roles
+# Agent Roles
 
-# 1️⃣ Authentication Agent
+# Authentication Agent
 
 **Responsibility:**
 
@@ -34,7 +34,7 @@ Database Layer (PostgreSQL + Drizzle ORM)
 * Passport.js
 * Express Sessions
 
-# 2️⃣ Task / Quest Agent
+# Task / Quest Agent
 
 **Responsibility:**
 
@@ -47,7 +47,7 @@ Database Layer (PostgreSQL + Drizzle ORM)
 * Express APIs
 * Zod (validation)
 
-# 3️⃣ Game Logic Agent
+# Game Logic Agent
 
 **Responsibility:**
 
@@ -61,7 +61,7 @@ Database Layer (PostgreSQL + Drizzle ORM)
 * Level thresholds
 * Progress tracking
 
-# 🔄 Communication Flow
+# Communication Flow
 
 # Step-by-step interaction:
 
@@ -77,7 +77,7 @@ Database Layer (PostgreSQL + Drizzle ORM)
 6. Response is sent back to frontend
 7. UI updates in real-time
 
-# 🔌 Tool Integrations
+# Tool Integrations
 
 | Tool         | Purpose                 |
 | ------------ | ----------------------- |
@@ -90,27 +90,27 @@ Database Layer (PostgreSQL + Drizzle ORM)
 | React Query  | Data fetching & caching |
 | Zod          | Input validation        |
 
-# ⚠️ Error Handling Strategy
+# Error Handling Strategy
 
-# 🔹 Frontend Handling
+# Frontend Handling
 
 * Displays user-friendly error messages
 * Prevents invalid form submissions
 * Uses validation before API calls
 
-# 🔹 Backend Handling
+# Backend Handling
 
 * Try-catch blocks for API routes
 * Centralized error responses
 * Validation using Zod
 
-# 🔹 Database Safety
+# Database Safety
 
 * Prevents invalid queries
 * Handles connection failures
 * Ensures data consistency
 
-# 🔹 Example Error Flow
+# Example Error Flow
 
 User submits invalid data
         ▼
@@ -124,18 +124,18 @@ Error response returned
         ▼
 Frontend displays message
 
-# 🚀 Scalability Considerations
+# Scalability Considerations
 
 * Modular agent-based design allows easy expansion
 * New agents (e.g., AI Suggestion Agent) can be added
 * Database structure supports scaling users & tasks
 * API layer can be extended into microservices
 
-# 🧩 Future Agent Extensions
+# Future Agent Extensions
 
-* 🏆 Leaderboard Agent (competitive features)
-* 🔔 Notification Agent (reminders & alerts)
+ Leaderboard Agent (competitive features)
+ Notification Agent (reminders & alerts)
 
-# ✅ Summary
+# Summary
 
 The system follows a **modular agent-based architecture** where each component has a clearly defined responsibility. Communication is handled through a centralized API layer, ensuring scalability, maintainability, and a clean separation of concerns.
