@@ -1,0 +1,34 @@
+🧠 Day 1 – Setup
+
+Initial project setup with Vite + Express
+Configured TypeScript and project structure
+
+🧠 Day 1 – UI Base
+
+Created basic UI layout and components
+Integrated Tailwind CSS and design system
+
+🧠 Day 2 – Core Features
+
+Implemented quest/task system
+Added basic state management for user progress
+
+🧠 Day 2 – Backend
+
+Set up Express server and API routes
+Connected PostgreSQL using Drizzle ORM
+
+🧠 Day 3 – Auth + Integration
+
+Implemented user authentication using Passport
+Connected frontend with backend APIs
+
+🧠 Day 3 – Polish
+
+Improved UI/UX with animations (Framer Motion)
+Fixed bugs and optimized performance
+
+🧠 Final Commit
+
+Final cleanup, added README and documentation
+Prepared project for submission
