@@ -1,0 +1,141 @@
+# 🧠 System Architecture & Agent Design – Life RPG
+
+# 📊 High-Level Architecture
+
+User (Frontend UI)
+        │
+        ▼
+React Client (Vite + Tailwind)
+        │
+        ▼
+API Layer (Express Server)
+        │
+ ┌──────┼────────┐
+ ▼      ▼        ▼
+Auth   Task     Game Logic
+Agent  Agent    Agent
+ │      │        │
+ └──────┼────────┘
+        ▼
+Database Layer (PostgreSQL + Drizzle ORM)
+
+# 🤖 Agent Roles
+
+# 1️⃣ Authentication Agent
+
+**Responsibility:**
+
+* Handles user login/signup
+* Manages sessions and security
+* Validates user identity
+
+**Tools Used:**
+
+* Passport.js
+* Express Sessions
+
+# 2️⃣ Task / Quest Agent
+
+**Responsibility:**
+
+* Creates, updates, and deletes tasks (quests)
+* Tracks completion status
+* Maps real-life tasks → game quests
+
+**Tools Used:**
+
+* Express APIs
+* Zod (validation)
+
+# 3️⃣ Game Logic Agent
+
+**Responsibility:**
+
+* Calculates XP and leveling
+* Updates user progress
+* Handles rewards system
+
+**Logic Includes:**
+
+* XP calculation
+* Level thresholds
+* Progress tracking
+
+# 🔄 Communication Flow
+
+# Step-by-step interaction:
+
+1. User interacts with frontend (React UI)
+2. Frontend sends API request to Express server
+3. Server routes request to relevant agent:
+
+   * Auth → Authentication Agent
+   * Task → Task Agent
+   * Progress → Game Logic Agent
+4. Agent processes request
+5. Database is queried/updated
+6. Response is sent back to frontend
+7. UI updates in real-time
+
+# 🔌 Tool Integrations
+
+| Tool         | Purpose                 |
+| ------------ | ----------------------- |
+| React        | Frontend UI             |
+| Tailwind CSS | Styling                 |
+| Express.js   | Backend API             |
+| PostgreSQL   | Data storage            |
+| Drizzle ORM  | Database interaction    |
+| Passport.js  | Authentication          |
+| React Query  | Data fetching & caching |
+| Zod          | Input validation        |
+
+# ⚠️ Error Handling Strategy
+
+# 🔹 Frontend Handling
+
+* Displays user-friendly error messages
+* Prevents invalid form submissions
+* Uses validation before API calls
+
+# 🔹 Backend Handling
+
+* Try-catch blocks for API routes
+* Centralized error responses
+* Validation using Zod
+
+# 🔹 Database Safety
+
+* Prevents invalid queries
+* Handles connection failures
+* Ensures data consistency
+
+# 🔹 Example Error Flow
+
+User submits invalid data
+        ▼
+Frontend validation fails → shows error
+        ▼
+(If bypassed)
+        ▼
+Backend validation (Zod)
+        ▼
+Error response returned
+        ▼
+Frontend displays message
+
+# 🚀 Scalability Considerations
+
+* Modular agent-based design allows easy expansion
+* New agents (e.g., AI Suggestion Agent) can be added
+* Database structure supports scaling users & tasks
+* API layer can be extended into microservices
+
+# 🧩 Future Agent Extensions
+
+* 🏆 Leaderboard Agent (competitive features)
+* 🔔 Notification Agent (reminders & alerts)
+
+# ✅ Summary
+
+The system follows a **modular agent-based architecture** where each component has a clearly defined responsibility. Communication is handled through a centralized API layer, ensuring scalability, maintainability, and a clean separation of concerns.
