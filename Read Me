@@ -1,8 +1,8 @@
-# 🎮 Life RPG
+# Life RPG
 
 Turn your real life into a game — track habits, complete quests, and level up yourself.
 
-# 📌 Overview
+# Overview
 
 Life RPG is a gamified productivity web application that transforms everyday tasks and habits into an engaging role-playing experience.
 Instead of traditional to-do lists, users complete real-life "quests", earn rewards,
@@ -19,16 +19,16 @@ Users can:
 
 Built during a hackathon to make self-improvement engaging and addictive.
 
-# ✨ Features
+# Features
 
-* 🧩 Quest-based task system
-* 📈 Progress tracking and leveling
-* 🎯 Habit and goal management
-* 🎨 Modern responsive UI
-* ⚡ Real-time updates
-* 🔐 User authentication system
+* Quest-based task system
+* Progress tracking and leveling
+* Habit and goal management
+* Modern responsive UI
+* Real-time updates
+* User authentication system
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 **Frontend**
 
@@ -53,7 +53,7 @@ Built during a hackathon to make self-improvement engaging and addictive.
 * Zod (validation)
 * Passport (authentication)
 
-# 📂 Project Structure
+# Project Structure
 
 Life-RPG/
 │── client/          # Frontend (React)
@@ -63,38 +63,38 @@ Life-RPG/
 │── package.json
 │── vite.config.ts
 
-# ⚙️ Setup Instructions
+# Setup Instructions
 
-# 1️⃣ Clone the Repository
+# Clone the Repository
 
 git clone https://github.com/your-username/life-rpg.git
 cd life-rpg
 
-# 2️⃣ Install Dependencies
+# Install Dependencies
 
 npm install
 
-# 3️⃣ Setup Environment Variables
+# Setup Environment Variables
 
 Create a `.env` file:
 
 DATABASE_URL=your_postgres_url
 SESSION_SECRET=your_secret_key
 
-# 4️⃣ Setup Database
+# Setup Database
 
 npm run db:push
 
-# 5️⃣ Run the Project (Development)
+# Run the Project (Development)
 
 npm run dev
 
-# 6️⃣ Build for Production
+# Build for Production
 
 npm run build
 npm start
 
-# 🚧 Challenges Faced
+# Challenges Faced
 
 * Designing a gamification system that feels engaging but simple
 * Managing real-time state between frontend and back
